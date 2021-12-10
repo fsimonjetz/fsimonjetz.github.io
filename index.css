@@ -34,6 +34,7 @@ body {
     section {
         flex-direction: column;
         justify-content: center;
+        padding: 1.5em;
     }
 
     header {
@@ -47,6 +48,7 @@ body {
     section {
         flex-direction: row;
         justify-content: flex-start;
+        padding: 3em;
     }
 
     .main-content-wrapper {
@@ -62,7 +64,6 @@ Sections
 section {
     scroll-snap-align: start;
     min-height: 100vh;
-    padding: 3em;
     width: 100%;
     max-width: 1330px;
     margin: 0 auto;
@@ -77,36 +78,10 @@ header {
 }
 
 
-.main-content-wrapper svg {
-    height: clamp(45px, 6vw, 75px);
-}
-
 #intro > header {
     flex-basis: 100%;
     min-width: 300px;
 }
-
-#intro > .main-content-wrapper {
-    flex-basis: 100%;
-    min-width: 300px;
-}
-
-.image-wrapper {
-    text-align: right;
-    max-width: 80%;
-    margin: 0 auto;
-}
-
-.main-content-wrapper img {
-    display: block;
-    max-width: 100%;    
-}
-
-.main-content-wrapper a {
-    margin-right: 6%;
-    font-size: 12px;
-}
-
 
 h1 {
     font-size: clamp(28px, 5vw, 48px);
@@ -124,6 +99,32 @@ h2, .subtitle {
     display: inline-block;
     margin-bottom: .2em;
 }
+
+.image-wrapper {
+    text-align: right;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#intro > .main-content-wrapper {
+    flex-basis: 100%;
+    min-width: 300px;
+}
+
+.main-content-wrapper img {
+    display: block;
+    max-width: 100%;    
+}
+
+.main-content-wrapper a {
+    margin-right: 6%;
+    font-size: 12px;
+}
+
+.main-content-wrapper svg {
+    height: clamp(45px, 6vw, 75px);
+}
+
 
 /**********************************************************
 Links 
@@ -177,7 +178,8 @@ ul.skillset li {
 }
 
 ul.skillset li ~ li::before {
-    content: "• ";
+    content: "•";
+    padding-right: .3em;
 
 }
 
