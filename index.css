@@ -33,6 +33,7 @@ body {
 @media all and (max-width: 800px) {
     section {
         flex-direction: column;
+        justify-content: center;
     }
 
     header {
@@ -45,6 +46,11 @@ body {
 @media all and (min-width: 801px) {
     section {
         flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .main-content-wrapper {
+        width: 70%;
     }
     
 }
@@ -70,9 +76,6 @@ header {
     min-width: 30%;
 }
 
-.main-content-wrapper {
-    max-width: 70%;
-}
 
 .main-content-wrapper svg {
     height: clamp(45px, 6vw, 75px);
