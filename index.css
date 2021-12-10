@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* https://www.jordanprindledesigns.com/blog/color-palettes
+    Grey: #959595 | Cream: #e2e0d4 | Off Pink: #cebeb9 | Pure Pink: #e7cac2 | Soft Grey:#e8e8e8 */
+    --main-bg: #f2f2f2;
+    --main-font-clr: #575757;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--main-font-clr);
+    scroll-behavior: smooth;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+body > * {
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
+
+header, section {
+    width: 100%;
+    border: 1px solid red;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    width: 40%;
+    padding: 1em;
+    min-width: 300px;
+}
+
+.title-image-wrapper {
+    width: 60%;
+    text-align: right;
+}
+
+.title-image-wrapper img {
+    display: block;
+    max-width: 100%;    
+}
+
+.title-image-wrapper a {
+    color: var(--main-font-clr);
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.title-image-wrapper a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: .2em;
+}
+
+.subtitle {
+    font-size: 32px;
+}
+
+section > h2 {
+    font-size: 21px;
+}
